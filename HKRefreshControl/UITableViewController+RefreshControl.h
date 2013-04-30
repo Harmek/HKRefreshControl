@@ -1,5 +1,5 @@
 //
-//  HKAppDelegate.h
+//  UITableViewController+RefreshControl.h
 //  HKRefreshControl
 //
 //  Copyright (c) 2013, Panos Baroudjian.
@@ -29,12 +29,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class HKViewController;
+@class HKRefreshControl;
+@interface UITableViewController (RefreshControl)
 
-@interface HKAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) HKViewController *viewController;
+@property () HKRefreshControl *customRefreshControl;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  HKAppDelegate.h
+//  UITableViewController+RefreshControl.m
 //  HKRefreshControl
 //
 //  Copyright (c) 2013, Panos Baroudjian.
@@ -27,14 +27,21 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "UITableViewController+RefreshControl.h"
+#import "HKRefreshControl.h"
+#import <objc/runtime.h>
 
-@class HKViewController;
+@implementation UITableViewController (RefreshControl)
 
-@interface HKAppDelegate : UIResponder <UIApplicationDelegate>
+- (void)setCustomRefreshControl:(HKRefreshControl *)customRefreshControl
+{
+    objc_setAssociatedObject(self, @"CustomRefreshControl", customRefreshControl, OBJC_ASSOCIATION_RETAIN);
+    [self.view addSubview:customRefreshControl];
+}
 
-@property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) HKViewController *viewController;
+- (HKRefreshControl *)customRefreshControl
+{
+    return objc_getAssociatedObject(self, @"CustomRefreshControl");
+}
 
 @end

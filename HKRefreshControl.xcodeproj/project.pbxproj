@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06C3D12034CF46209ACF766E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA0864508494DC385DEE409 /* libPods.a */; };
 		5029E024172F4FE20045950E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5029E023172F4FE20045950E /* UIKit.framework */; };
 		5029E026172F4FE20045950E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5029E025172F4FE20045950E /* Foundation.framework */; };
 		5029E028172F4FE20045950E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5029E027172F4FE20045950E /* CoreGraphics.framework */; };
@@ -16,9 +17,13 @@
 		5029E036172F4FE20045950E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029E035172F4FE20045950E /* Default.png */; };
 		5029E038172F4FE20045950E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029E037172F4FE20045950E /* Default@2x.png */; };
 		5029E03A172F4FE20045950E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5029E039172F4FE20045950E /* Default-568h@2x.png */; };
+		5029E046172F4FF50045950E /* HKRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5029E041172F4FF50045950E /* HKRefreshControl.m */; };
+		5029E047172F4FF50045950E /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5029E043172F4FF50045950E /* HKViewController.m */; };
+		5029E048172F4FF50045950E /* UITableViewController+RefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5029E045172F4FF50045950E /* UITableViewController+RefreshControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		071D5F65AFB540878B5171E6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		5029E020172F4FE20045950E /* HKRefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKRefreshControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5029E023172F4FE20045950E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5029E025172F4FE20045950E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +37,13 @@
 		5029E035172F4FE20045950E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5029E037172F4FE20045950E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5029E039172F4FE20045950E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5029E040172F4FF50045950E /* HKRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKRefreshControl.h; sourceTree = "<group>"; };
+		5029E041172F4FF50045950E /* HKRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKRefreshControl.m; sourceTree = "<group>"; };
+		5029E042172F4FF50045950E /* HKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
+		5029E043172F4FF50045950E /* HKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
+		5029E044172F4FF50045950E /* UITableViewController+RefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+RefreshControl.h"; sourceTree = "<group>"; };
+		5029E045172F4FF50045950E /* UITableViewController+RefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+RefreshControl.m"; sourceTree = "<group>"; };
+		DDA0864508494DC385DEE409 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,7 @@
 				5029E024172F4FE20045950E /* UIKit.framework in Frameworks */,
 				5029E026172F4FE20045950E /* Foundation.framework in Frameworks */,
 				5029E028172F4FE20045950E /* CoreGraphics.framework in Frameworks */,
+				06C3D12034CF46209ACF766E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +67,7 @@
 				5029E029172F4FE20045950E /* HKRefreshControl */,
 				5029E022172F4FE20045950E /* Frameworks */,
 				5029E021172F4FE20045950E /* Products */,
+				071D5F65AFB540878B5171E6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +85,7 @@
 				5029E023172F4FE20045950E /* UIKit.framework */,
 				5029E025172F4FE20045950E /* Foundation.framework */,
 				5029E027172F4FE20045950E /* CoreGraphics.framework */,
+				DDA0864508494DC385DEE409 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,6 +95,12 @@
 			children = (
 				5029E032172F4FE20045950E /* HKAppDelegate.h */,
 				5029E033172F4FE20045950E /* HKAppDelegate.m */,
+				5029E040172F4FF50045950E /* HKRefreshControl.h */,
+				5029E041172F4FF50045950E /* HKRefreshControl.m */,
+				5029E042172F4FF50045950E /* HKViewController.h */,
+				5029E043172F4FF50045950E /* HKViewController.m */,
+				5029E044172F4FF50045950E /* UITableViewController+RefreshControl.h */,
+				5029E045172F4FF50045950E /* UITableViewController+RefreshControl.m */,
 				5029E02A172F4FE20045950E /* Supporting Files */,
 			);
 			path = HKRefreshControl;
@@ -106,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5029E03D172F4FE20045950E /* Build configuration list for PBXNativeTarget "HKRefreshControl" */;
 			buildPhases = (
+				D938B8E361F947A3A3FE64C4 /* Check Pods Manifest.lock */,
 				5029E01C172F4FE20045950E /* Sources */,
 				5029E01D172F4FE20045950E /* Frameworks */,
 				5029E01E172F4FE20045950E /* Resources */,
+				1D257ADAA71A49DC8A28D6F5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +183,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D257ADAA71A49DC8A28D6F5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		D938B8E361F947A3A3FE64C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5029E01C172F4FE20045950E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -167,6 +221,9 @@
 			files = (
 				5029E030172F4FE20045950E /* main.m in Sources */,
 				5029E034172F4FE20045950E /* HKAppDelegate.m in Sources */,
+				5029E046172F4FF50045950E /* HKRefreshControl.m in Sources */,
+				5029E047172F4FF50045950E /* HKViewController.m in Sources */,
+				5029E048172F4FF50045950E /* UITableViewController+RefreshControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,10 +299,12 @@
 		};
 		5029E03E172F4FE20045950E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071D5F65AFB540878B5171E6 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HKRefreshControl/HKRefreshControl-Prefix.pch";
 				INFOPLIST_FILE = "HKRefreshControl/HKRefreshControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -253,10 +312,12 @@
 		};
 		5029E03F172F4FE20045950E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071D5F65AFB540878B5171E6 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HKRefreshControl/HKRefreshControl-Prefix.pch";
 				INFOPLIST_FILE = "HKRefreshControl/HKRefreshControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,6 +342,7 @@
 				5029E03F172F4FE20045950E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
