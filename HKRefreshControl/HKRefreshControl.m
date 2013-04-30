@@ -225,6 +225,7 @@ typedef NS_ENUM(NSUInteger, HKRefreshControlState)
     _tintColor = tintColor;
     [self.indicatorView setTintColor:tintColor];
     [self.pullView setTintColor:tintColor];
+    [self.textLabel setTextColor:tintColor];
 }
 
 - (void)layoutSubviews
