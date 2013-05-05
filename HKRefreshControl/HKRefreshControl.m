@@ -32,7 +32,7 @@
 #import <HKCircularProgressView.h>
 
 static CGFloat const kHKAdditionalTopInset = 70.;
-static CGFloat const kHKRefreshThreshold = 115.;
+static CGFloat const kHKRefreshThreshold = 100;
 
 typedef NS_ENUM(NSUInteger, HKRefreshControlState)
 {
