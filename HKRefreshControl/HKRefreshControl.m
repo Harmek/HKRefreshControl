@@ -189,6 +189,7 @@ typedef NS_ENUM(NSUInteger, HKRefreshControlState)
     _textLabel = textLabel;
     textLabel.font = [UIFont boldSystemFontOfSize:12];
     textLabel.textColor = self.tintColor;
+    textLabel.backgroundColor = [UIColor clearColor];
     textLabel.text = self.attributedTitle.string;
     [self addSubview:textLabel];
 }
