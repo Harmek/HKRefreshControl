@@ -360,6 +360,8 @@ typedef NS_ENUM(NSUInteger, HKRefreshControlState)
             [self sendActionsForControlEvents:UIControlEventValueChanged];
             break;
         case HKRefreshControlStateDone:
+            self.pullView.hidden = YES;
+            self.indicatorView.hidden = YES;
             break;
         default:
             break;
