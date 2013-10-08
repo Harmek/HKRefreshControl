@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.platform      = :ios, '5.0'
   s.source_files  = 'HKRefreshControl/HKRefreshControl.{h,m}', 'HKRefreshControl/UITableViewController+RefreshControl.{h,m}'
   s.requires_arc  = true
-  s.dependency    'HKCircularProgressView', '~> 1.0.5'
+  s.dependency    'HKCircularProgressView', '~> 1.1.0'
 end
 
